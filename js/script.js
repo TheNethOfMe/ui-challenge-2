@@ -6,10 +6,19 @@ $(document).ready(() => {
 
 $('input[name="text-input-error"]').on('input', function(e) {
   if (e.target.value) {
-    $('input[name="text-input-error"]').removeClass('invalid-form');
+    $(this).removeClass('invalid-form');
     $('.error-text').hide();
   } else {
-    $('input[name="text-input-error"]').addClass('invalid-form');
+    $(this).addClass('invalid-form');
     $('.error-text').show();
   }
 });
+
+$('.checkbox-sprite').on('click', function(e) {
+  $(this).toggleClass('checkbox-sprite-selected');
+});
+
+$('.radio-sprite').on('click', function(e) {
+  $('.radio-sprite').removeClass('radio-sprite-selected');
+  $(this).addClass('radio-sprite-selected');
+})
