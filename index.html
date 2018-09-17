@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>UI Challenge - Custom Form Inputs</h1>
+
+  <div class="input-group">
+    <label for="text-input">text input</label>
+    <input type="text" name="text-input" placeholder="placeholder text" />
+  </div>
+  
+  <div class="input-group">
+    <label for="text-input-error">text input w/ validation error</label>
+    <input class="invalid-form" type="text" name="text-input-error" placeholder="placeholder text" />
+    <p class="error-text">please enter a valid username</p>
+  </div>
+  
+  <div class="input-group">
+    <label for="select-box">select box</label>
+    <select name="select-box" id="select-box">
+      <option>please select an option...</option>
+    </select>
+  </div>
+  
+  <div class="input-group">
+    <label for="open-select-box">select box - open</label>
+    <select name="open-select-box" id="open-select-box">
+      <option><p>option 1</p></option>
+      <option>option 2</option>
+      <option>option 3</option>
+      <option>option 4</option>
+      <option>option 5</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label for="checkbox">checkbox</label>
+    <div class="clickable-group">
+      <div class="checkbox-sprite"></div>
+      <div class="checkbox-sprite checkbox-sprite-selected"></div>
+    </div>
+  </div>
+  
+  <div class="input-group">
+    <label for="radio">radio</label>
+    <div class="clickable-group">
+      <div class="radio-sprite"></div>
+      <div class="radio-sprite radio-sprite-selected"></div>
+    </div>
+  </div>
+  
+  <div class="input-group">
+    <label>buttons</label>
+    <div class="clickable-group">
+      <div class="btn">submit</div>
+      <div class="btn btn-inverse">submit</div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
