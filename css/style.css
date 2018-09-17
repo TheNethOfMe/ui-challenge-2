@@ -105,6 +105,10 @@ option:nth-child(odd) {
   margin-right: 15px;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn-inverse {
   background-color: #333;
   color: #ccc;
